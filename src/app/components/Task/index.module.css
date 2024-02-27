@@ -1,0 +1,25 @@
+.header {
+  display: flex;
+  justify-content: center;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.formInp {
+  border: 1px dotted gray;
+  width: 200px;
+  margin-top: 1%;
+}
+
+.formBtn {
+  width: 100px;
+  margin-top: 2%;
+  background-color: rgb(109, 97, 97);
+  color: aliceblue;
+  border: none;
+  cursor: pointer;
+}
