@@ -1,8 +1,12 @@
-"use client";
-
 import React, { useState } from "react";
 import ProfileForm from "./ProfileForm";
 import styles from "./index.module.css";
+
+interface ProfileData {
+  firstName: string;
+  lastName: string;
+  email: string;
+}
 
 const UserProfile: React.FC = () => {
   const [profile, setProfile] = useState<ProfileData>({
