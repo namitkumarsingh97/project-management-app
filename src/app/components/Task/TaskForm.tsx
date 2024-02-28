@@ -3,7 +3,7 @@
 import React, { useState } from "react";
 import styles from "./index.module.css";
 
-interface TaskFormData {
+export interface TaskFormData {
   title: string;
   description: string;
   deadline: string;

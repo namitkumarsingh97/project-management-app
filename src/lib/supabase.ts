@@ -1,7 +1,7 @@
 // LcIelledHEtxpwIB
 
-import { createClient, SupabaseClient } from "@supabase/supabase-js";
+import { createClient } from "@supabase/supabase-js";
 
-const supabaseUrl: string = "https://ascuucqejhxjomscgetk.supabase.co";
-const supabaseKey: string = process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY ?? "";
-export const supabase: SupabaseClient = createClient(supabaseUrl, supabaseKey);
+const supabaseUrl = "https://ascuucqejhxjomscgetk.supabase.co";
+const supabaseKey = process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY ?? "";
+export const supabase = createClient(supabaseUrl, supabaseKey);

@@ -1,8 +1,6 @@
-"use client";
-
 import React, { useState } from "react";
 import styles from "./index.module.css";
-import TaskForm from "./TaskForm";
+import TaskForm, { TaskFormData } from "./TaskForm";
 import TaskList from "./TaskList";
 
 interface Task {
@@ -17,8 +15,12 @@ interface Task {
 const Dashboard: React.FC = () => {
   const [tasks, setTasks] = useState<Task[]>([]);
 
-  const handleTaskCreation = (task: Task) => {
-    setTasks((prevTasks) => [...prevTasks, task]);
+  const handleTaskCreation = (formData: TaskFormData) => {
+    const newTask: Task = {
+      id: tasks.length + 1,
+      ...formData,
+    };
+    setTasks((prevTasks) => [...prevTasks, newTask]);
   };
 
   return (
